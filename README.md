@@ -1,4 +1,5 @@
 # Java_TicTacToe
+## Description
 Tic Tac Toe Game is built that based on Java Swing with 2 modes:
 1. Normal (Player to Player)
 2. AI (Player to Computer) - using MiniMax Algorithm
