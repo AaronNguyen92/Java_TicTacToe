@@ -7,4 +7,4 @@ Tic Tac Toe Game is built that based on Java Swing with 2 modes:
 ## Screen Shoot
 ![main-interface](https://live.staticflickr.com/65535/51003751780_187cc3c770_b.jpg)
 ## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5UXy1pn3yYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{@youtube: https://www.youtube.com/watch?v=HndN6P9ke6U}
