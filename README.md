@@ -13,4 +13,4 @@ Tic Tac Toe Game is built that based on Java Swing with 2 modes:
 <br><br>
 👉 **Player to Computer**
 <br><br>
-![demo2](https://64.media.tumblr.com/395e74153190ce29421ade8a9f131d19/3881f765f5a3b322-a5/s1280x1920/65c4c4e14aaac20713f605c48234043aae7b8c68.gifv)
+![demo2](https://64.media.tumblr.com/395e74153190ce29421ade8a9f131d19/3881f765f5a3b322-a5/s1280x1920/65c4c4e14aaac20713f605c48234043aae7b8c68.gif)
