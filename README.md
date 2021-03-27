@@ -8,13 +8,13 @@ After starting program, there will be 1 window display to notify that you must s
 *1. Normal:*<br>
 Player X will begin beforehand.<br>
 *2. AI:*<br>
-Player X will begin beforehand, then you have to choose computer or player which plays role of Player X. Default role's Player.<br>
-During playing game, you also change role in order to restart the new game.<br>
-Note: You can't win computer in this mode, you just maybe lose or draw!<br>
+&nbsp;&nbsp;**Player X will begin beforehand, then you have to choose computer or player which plays role of Player X. Default role's Player.<br>
+&nbsp;&nbsp;**During playing game, you also change role in order to restart the new game.<br>
+***Note:*** You can't win computer in this mode, you just maybe lose or draw!<br>
 **Buttons Function:**<br>
-***New Game Button:*** *create a completely new game, all score of the former game will be removed.*<br>
-***Reset Button:*** *create a new board, all score of current game will not be deleted.*<br>
-***Exit Button:*** *Terminate program, close the game's window.*<br>
+&nbsp;&nbsp;***New Game Button:*** *create a completely new game, all score of the former game will be removed.*<br>
+&nbsp;&nbsp;***Reset Button:*** *create a new board, all score of current game will not be deleted.*<br>
+&nbsp;&nbsp;***Exit Button:*** *Terminate program, close the game's window.*<br>
 ## Screen Shoot
 ![main-interface](https://live.staticflickr.com/65535/51003751780_187cc3c770_b.jpg)
 ## Demo 
