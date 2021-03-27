@@ -4,9 +4,20 @@ Tic Tac Toe Game is built that based on Java Swing with 2 modes:
 1. Normal (Player to Player)
 2. AI (Player to Computer) - using MiniMax Algorithm, you can learn more about it -> [here](https://www.stdio.vn/giai-thuat-lap-trinh/giai-thuat-tim-kiem-minimax-s1EVnH)
 ## Instruction
+After starting program, there will be 1 window display to notify that you must select mode:
+*1. Normal:*
+Player X will begin beforehand.
+*2. AI:*
+Player X will begin beforehand, then you have to choose computer or player which plays role of Player X. Default role's Player.
+During playing game, you also change role in order to restart the new game.
+Note: You can't win computer in this mode, you just maybe lose or draw!
+**Buttons Function:**
+***New Game Button:*** *create a completely new game, all score of the former game will be removed.*
+***Reset Button:*** *create a new board, all score of current game will not be deleted.*
+***Exit Button:*** *Terminate program, close the game's window.*
 ## Screen Shoot
 ![main-interface](https://live.staticflickr.com/65535/51003751780_187cc3c770_b.jpg)
-## Demo
+## Demo 
 👉 **Player to Player**
 <br><br>
 ![demo1](https://64.media.tumblr.com/395e74153190ce29421ade8a9f131d19/3881f765f5a3b322-a5/s1280x1920/65c4c4e14aaac20713f605c48234043aae7b8c68.gif)
