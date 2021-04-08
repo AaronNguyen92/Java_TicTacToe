@@ -3,12 +3,11 @@
 Tic Tac Toe Game is built that based on Java Swing with 2 modes:
 1. Normal (Player to Player)
 2. AI (Player to Computer) - using MiniMax Algorithm, you can learn more about it -> <a href="https://www.stdio.vn/giai-thuat-lap-trinh/giai-thuat-tim-kiem-minimax-s1EVnH" >here</a>
-<br>
 ***MiniMax Algorithm:***<br>
 ⚪️ Assumption:<br>
   🔸 If Player X wants to win, Player X will have to find the maximum value (+1).<br>
   🔸 If Player O wants to win, Player O will have to find the minimum value (-1).<br><br>
-![Minimax]()
+![Minimax](https://nestedsoftware.com/assets/images/2019-06-15-tic-tac-toe-with-the-minimax-algorithm-5988.123625/eo3qr44bp1w96a92t8s2.png)
 ## Instruction
 After starting program, there will be 1 window display to notify that you must select mode:<br>
 *1. Normal:*<br>
