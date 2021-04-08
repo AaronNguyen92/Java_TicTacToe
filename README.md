@@ -2,7 +2,7 @@
 ## Description
 Tic Tac Toe Game is built that based on Java Swing with 2 modes:
 1. Normal (Player to Player)
-2. AI (Player to Computer) - using MiniMax Algorithm, you can learn more about it -> [here](https://www.stdio.vn/giai-thuat-lap-trinh/giai-thuat-tim-kiem-minimax-s1EVnH)
+2. AI (Player to Computer) - using MiniMax Algorithm, you can learn more about it -> <a href="https://www.stdio.vn/giai-thuat-lap-trinh/giai-thuat-tim-kiem-minimax-s1EVnH" >here</a>
 <br>
 ***MiniMax Algorithm:***<br>
 ⚪️ Assumption:<br>
