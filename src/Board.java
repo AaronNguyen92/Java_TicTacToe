@@ -1,28 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author DELL
- */
+
 public class Board {
-    public static final int NO_PLAYER = 0;
+    public static final int NO_PLAYER = 0;//quy ước là ô còn trống
     public static final int PLAYER_X = 1;
     public static final int PLAYER_O = 2;
     private int[][] board = new int[3][3];
-    public Point computerMove;
+    public Point computerMove;//Tọa độ nước đi của máy tính
     
     public boolean isGameOver(){
         return hasPlayerWon(PLAYER_X) || hasPlayerWon(PLAYER_O) || getAvailableCells().isEmpty();
     }
-
+    
+    //kiểm tra người chơi có thắng hay không
     public boolean hasPlayerWon(int player) {
         if((board[0][0] == board[1][1] && board[0][0] == board[2][2] && board[0][0] == player) ||
             (board[0][2] == board[1][1] && board[0][2] == board[2][0] && board[0][2] == player)){
@@ -36,7 +27,8 @@ public class Board {
         }
         return false;
     }
-
+    
+    //Trả về những ô còn trống, người chơi có thể đi được.
     public List<Point> getAvailableCells() {
         List<Point> availableCells = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
@@ -50,6 +42,7 @@ public class Board {
         return availableCells;
     }
     
+    //Kiểm tra ô này có thể đi hay không, nếu không có nghĩa là ô này đã được đánh dấu trước đó
     public boolean placeAMove(Point point, int player){
         if(board[point.x][point.y] != NO_PLAYER){
             return false;
@@ -81,6 +74,7 @@ public class Board {
     
     
     public int minimax(int depth, int turn){
+        //Các điều kiện dừng
         if(hasPlayerWon(PLAYER_X)){
             return 1;
         }
@@ -96,11 +90,12 @@ public class Board {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
         
+        //Chạy qua hết 1 lần những ô còn trống để tính toán nước đi 
         for (int i = 0; i < availableCells.size(); i++) {
             Point point = availableCells.get(i);
             
             if (turn == PLAYER_X) {
-                placeAMove(point, PLAYER_X);
+                placeAMove(point, PLAYER_X);//Đánh dấu X trên bàn cờ
                 int currentScore = minimax( depth + 1, PLAYER_O);
                 max = Math.max(currentScore, max);
                 
@@ -108,16 +103,19 @@ public class Board {
                     //System.out.println("Computer score for position " + point + " = " + currentScore);
                 }
                 
+                //Lấy tọa độ của nước đi tốt nhất khi tìm được nó
                 if(currentScore >= 0){
                     if(depth == 0)
                         computerMove = point;
                 }
                 
+                //Đánh dấu nước đi tốt nhất đó trở lại thành trạng thái chưa được đánh dấu và thoát khỏi vòng lặp
                 if(currentScore == 1){
                     board[point.x][point.y] = NO_PLAYER;
                     break;
                 }
                 
+                //Duyệt qua hết các ô trống mà không tìm được nước đi tốt nhất
                 if(i == availableCells.size()-1 && max<0){
                     if(depth == 0)
                         computerMove = point;
